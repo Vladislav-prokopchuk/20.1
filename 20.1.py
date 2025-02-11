@@ -8,19 +8,19 @@ def convert_temperature():
 
 
 root = tk.Tk()
-root.title("Temperature Converter")
+root.title("перетворювач темепратури ")
 
 # Віджет для введення температури в Цельсіях
-tk.Label(root, text="Enter temperature in Celsius:").pack()
+tk.Label(root, text="температура в цельсіях :").pack()
 celsius_entry = tk.Entry(root)
 celsius_entry.pack()
 
 # Кнопка для конвертації
-convert_button = tk.Button(root, text="Convert", command=convert_temperature)
+convert_button = tk.Button(root, text="перетворення", command=convert_temperature)
 convert_button.pack()
 
 # Віджет для відображення результату
-fahrenheit_label = tk.Label(root, text="Temperature in Fahrenheit: ")
+fahrenheit_label = tk.Label(root, text="темепратура в ференгейтах : ")
 fahrenheit_label.pack()
 
 root.mainloop()
